@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Diagram</title>
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&amp;subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <!--link rel="stylesheet" type="text/css" href="css/style.css"/-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jointjs/3.2.0/joint.css"/>
+    <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
+    <style type="text/css">
+
+      html, body {
+        margin: 0;
+        padding: 0
+      }
+
+      #root {
+        top:25px;
+        left:25px;
+        position:absolute;
+        width:100%;
+        height: 100%;
+      }
+
+      #paper {
+        //top:30px;
+        //left:30px;
+        width: 100%;
+        height: 100%;
+      }
+
+      /* JointJS HTML My Element */
+
+      .my-html-element {
+        font-family: sans-serif;
+        box-shadow: 4px 4px 4px -1px rgba(0,0,0,0.18);
+        background-color: #FCFCFC;
+        position: absolute;
+        border: 2px solid black;
+        box-sizing: border-box;
+      }
+      .my-html-element-header {
+        position: relative;
+        display: block;
+        color: #222222;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 0;
+        text-align: center;
+        background-color: #E0E0E0;
+        margin: 0;
+        height: 96px;
+        box-sizing: content-box;
+        vertical-align: middle;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .my-html-element-image {
+        display: block;
+        font-size: 13px;
+        color: #222222;
+        padding: 0;
+        height: 100px;
+        width: 96px;
+      }
+
+      .corner {
+        background-color:darkmagenta;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border: 2px solid black;
+        display: block;
+        line-height: 20px;
+        margin: 0px;
+        font-size: 12px;
+        padding: 0px;
+      }
+      .titleTop {
+        position: absolute;
+        background-color:blue;
+        height: 20px;
+        border: 2px solid black;
+        display: block;
+        margin: 0px;
+        //margin-left: 5px;
+        line-height: 20px;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 0px;
+        text-align: center;
+
+      }
+      .titleLeft {
+        position: absolute;
+        background-color:blue;
+        height: 100px;
+        border: 2px solid black;
+        display: block;
+        margin: 0px;
+        //margin-top: 5px;
+        line-height: 20px;
+        font-size: 12px;
+        padding: 0px;
+        writing-mode: vertical-rl;
+        font-weight: bold;
+        text-align: center;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div>
+
+      <div id="root"></div>
+    </div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` in this folder.
+      To create a production bundle, use `npm run build`.
+    -->
+  </body>
+  <script src="js/app.js"></script>
+  
+  <!--script src="/js/jquery.min.js"></script-->
+  <!-- script src="/js/bootstrap.min.js"></script-->
+  <!-- script src="/js/nifty.min.js"></script-->
+</html>

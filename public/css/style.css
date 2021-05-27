@@ -1,0 +1,47 @@
+
+html, body {
+  margin: 0;
+  padding: 0
+}
+
+#root {
+  position:absolute;
+  width:50%;
+  height: 50%;
+}
+
+#paper {
+  width: 100%;
+}
+
+/* JointJS HTML My Element */
+
+.my-html-element {
+  font-family: sans-serif;
+  box-shadow: 4px 4px 4px -1px rgba(0,0,0,0.18);
+  background-color: #FCFCFC;
+  position: absolute;
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+.my-html-element-header {
+  position: relative;
+  display: block;
+  color: #222222;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0;
+  text-align: center;
+  background-color: #E0E0E0;
+  margin: 0;
+  height: 26px;
+  vertical-align: center;
+}
+.my-html-element-image {
+  display: block;
+  font-size: 13px;
+  color: #222222;
+  padding: 0;
+  height: 100px;
+  width: 96px;
+}
